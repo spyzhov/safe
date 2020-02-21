@@ -1,6 +1,6 @@
 # safe
 
-[![Build Status](https://travis-ci.com/spyzhov/safe.svg?token=swf7VyTzTWuHyiC9QzT4&branch=master)](https://travis-ci.com/spyzhov/safe)
+[![Build Status](https://travis-ci.com/spyzhov/safe.svg?branch=master)](https://travis-ci.com/spyzhov/safe)
 [![Go Report Card](https://goreportcard.com/badge/github.com/spyzhov/safe)](https://goreportcard.com/report/github.com/spyzhov/safe)
 [![GoDoc](https://godoc.org/github.com/spyzhov/safe?status.svg)](https://godoc.org/github.com/spyzhov/safe)
 [![Coverage Status](https://coveralls.io/repos/github/spyzhov/safe/badge.svg?branch=master)](https://coveralls.io/github/spyzhov/safe?branch=master)
