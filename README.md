@@ -5,6 +5,8 @@
 [![GoDoc](https://godoc.org/github.com/spyzhov/safe?status.svg)](https://godoc.org/github.com/spyzhov/safe)
 [![Coverage Status](https://coveralls.io/repos/github/spyzhov/safe/badge.svg?branch=master)](https://coveralls.io/github/spyzhov/safe?branch=master)
 
+Golang Minimal Version: **1.13**
+
 Package safe is a minimal project with safe methods to write clean code.
 
 ## safe.Close
@@ -36,9 +38,19 @@ Full description of the problem in article ["Go-tcha: When nil != nil"](https://
 
 ```go
 func Foo(str fmt.Stringer) {
-    if !IsNil(str) {
+    if !safe.IsNil(str) {
         // ...
     }
+}
+```
+
+## safe.Wrap
+
+`Wrap` will wrap current error with the scope value, or return `nil` if error wasn't set.
+
+```go
+func Unmarshal(data []byte) (value interface{}, err error) {
+	return value, safe.Wrap(json.Unmarshal(data, &value), "broken json")
 }
 ```
 
