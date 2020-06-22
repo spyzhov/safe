@@ -11,6 +11,7 @@ type stub struct {
 }
 
 func TestClose(t *testing.T) {
+	Printf = func(format string, v ...interface{}) {}
 	tests := []struct {
 		name   string
 		closer func() io.Closer
